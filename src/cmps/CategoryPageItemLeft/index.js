@@ -1,0 +1,1 @@
+export { CategoryPageItemLeft } from './CategoryPageItemLeft'

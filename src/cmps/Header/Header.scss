@@ -1,0 +1,29 @@
+.header {
+    background-color: #191919;
+    color: white;
+    padding-top: 24px;
+
+    .logo {
+    }
+
+    .main-nav {
+        margin-bottom: 36px;
+        li {
+            font-size: 13px;
+            line-height: 25px;
+            letter-spacing: 2px;
+
+            &:not(:last-child) {
+                margin-right: 35px;
+            }
+        }
+    }
+
+    .stroke {
+        height: 1px;
+        width: 100%;
+        opacity: 0.2;
+        background-color: white;
+        mix-blend-mode: normal;
+    }
+}

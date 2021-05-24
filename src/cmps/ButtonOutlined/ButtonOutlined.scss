@@ -1,0 +1,15 @@
+.button-outlined {
+
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    opacity: .5;
+
+    &::after {
+        content: url('../../imgs/icon-arrow-right.svg');
+        color: #D87D4A;
+        font-size: 16px;
+        font-weight: 700;
+        margin-left: 13px;
+    }
+}

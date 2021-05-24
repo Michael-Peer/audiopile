@@ -1,0 +1,40 @@
+.footer {
+    background-color: #101010;
+    color: white;
+    padding: 75px 0px 48px;
+    text-align: start;
+
+    .main-nav {
+        margin-bottom: 36px;
+        li {
+            font-size: 13px;
+            line-height: 25px;
+            letter-spacing: 2px;
+
+            &:not(:last-child) {
+                margin-right: 35px;
+            }
+        }
+    }
+
+    p{
+        font-weight: 500;
+        font-size: 15px;
+        line-height: 25px;
+        max-width: 540px;
+
+        &:first-child {
+            margin-bottom: 54px;
+        }
+    }
+
+    .social-networks-container{
+        flex: 1;
+        justify-content: flex-end;
+        align-items: center;
+
+        & > *:not(:last-child) {
+            margin-right: 16px;
+        }
+    }
+}

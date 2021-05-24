@@ -1,0 +1,31 @@
+.fourth-showcase {
+    margin-bottom: 200px;
+    margin-top: 200px;
+    img {
+        width: 540px;
+    }
+
+    .content-txt-container {
+        max-width: 450px;
+        text-align: start;
+        h2 {
+            text-transform: uppercase;
+            font-weight: 700;
+            font-size: 40px;
+            line-height: 44px;
+            letter-spacing: 1.45px;
+            margin-bottom: 32px;
+
+            span {
+                color: #d87d4a;
+            }
+        }
+
+        p {
+            font-weight: 500;
+            font-size: 15px;
+            line-height: 25px;
+            opacity: 0.5;
+        }
+    }
+}

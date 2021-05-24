@@ -1,0 +1,35 @@
+.category-page-item-left {
+    text-align: start;
+    margin-bottom: 160px;
+
+    img {
+        height: 560px;
+        width: 540px;
+        margin-right: 125px;
+    }
+
+    .product-title {
+        margin-bottom: 32px;
+        font-weight: 700;
+        font-size: 40px;
+        line-height: 44px;
+        letter-spacing: 1.4px;
+    }
+
+    .product-txt {
+        margin-bottom: 40px;
+        font-weight: 500;
+        font-size: 15px;
+        line-height: 25px;
+        opacity: 0.5;
+    }
+
+    .product-label {
+        color: #D87D4A;
+        font-size: 14px;
+        line-height: 19px;
+        letter-spacing: 10px;
+        text-transform: uppercase;
+        margin-bottom: 16px;
+    }
+}

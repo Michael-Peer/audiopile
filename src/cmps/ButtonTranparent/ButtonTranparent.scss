@@ -1,0 +1,18 @@
+
+
+.button-transparent {
+    display: inline-block;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    // @include button-txt;
+    color: black;
+
+    border: 1px solid #000000;
+    padding: 15px 30px;
+
+    &:hover {
+        background: #000000;
+        color: #ffffff;
+    }
+}

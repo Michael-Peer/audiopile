@@ -16,8 +16,8 @@ function App() {
         <Switch>
           <Route component={HeadphoneCategoryPage} path="/headphones" />
           <Route component={AudiopileApp} path="/" />
-          <Footer />
         </Switch>
+        <Footer />
       </div>
     </Router>
   );

@@ -17,18 +17,16 @@
         }
     }
 
-    p{
-        font-weight: 500;
-        font-size: 15px;
-        line-height: 25px;
+    p {
         max-width: 540px;
+        opacity: 0.5;
 
         &:first-child {
             margin-bottom: 54px;
         }
     }
 
-    .social-networks-container{
+    .social-networks-container {
         flex: 1;
         justify-content: flex-end;
         align-items: center;

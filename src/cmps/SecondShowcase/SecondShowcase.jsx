@@ -6,7 +6,7 @@ export const SecondShowcase = (props) => {
     return (
         <article className="second-showcase main-container">
             <section className="content">
-                <h2 className="product-title">ZX7 SPEAKER</h2>
+                <h4 className="product-title">ZX7 SPEAKER</h4>
                 <ButtonTranparent txt="SEE PRODUCT" />
             </section>
         </article>

@@ -10,7 +10,7 @@ export const CategoryItem = (props) => {
         <div className="category-item">
             <div className="background">
                 <img src={Headphones} />
-                <h2 className="title">HEADPHONES</h2>
+                <h6 className="title">HEADPHONES</h6>
                 <ButtonOutlined txt="SHOP" />
             </div>
         </div>

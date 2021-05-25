@@ -1,0 +1,15 @@
+.in-the-box-counter {
+    & > *:first-child {
+        margin-right: 24px;
+    }
+
+    height: 25px;
+
+    .counter {
+        color: #d87d4a;
+    }
+
+    .txt {
+        opacity: 0.5;
+    }
+}

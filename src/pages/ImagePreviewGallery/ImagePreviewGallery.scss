@@ -1,0 +1,12 @@
+.image-preview-gallery {
+    img {
+        border-radius: 8px;
+    }
+    .left-container {
+        margin-right: 30px;
+
+        & > *:first-child {
+            margin-bottom: 32px;
+        }
+    }
+}

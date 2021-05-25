@@ -1,0 +1,22 @@
+.cart-modal-item-preview {
+    margin-bottom: 24px;
+
+    img{
+        height: 64px;
+        width: 64px;
+        margin-right: 16px;
+        border-radius: 8px;
+    }
+    
+    .product-details{
+        text-align: start;
+        font-weight: 700;
+        margin-right: 60px;
+
+
+        .product-price{
+            font-size: 14px;
+            opacity: .5;
+        }
+    }
+}

@@ -1,0 +1,19 @@
+.cart-counter {
+    font-size: 0.8125rem;
+    line-height: 1.125rem;
+    letter-spacing: 1px;
+
+    &-item {
+        cursor: pointer;
+        background-color: #f1f1f1;
+        color: black;
+    }
+
+    &-sign > span {
+        opacity: 0.5;
+
+        &:hover {
+            color: #d87d4a;
+        }
+    }
+}

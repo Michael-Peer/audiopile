@@ -1,0 +1,1 @@
+export { CartModalItemPreview } from './CartModalItemPreview'

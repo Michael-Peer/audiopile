@@ -13,8 +13,8 @@ export const Header = (props) => {
                 <ul className="clean-list flex">
                     <li><NavLink to="/">HOME</NavLink></li>
                     <li><NavLink to="/headphones">HEADPHONES</NavLink></li>
-                    <li><NavLink to="#">SPEAKERS</NavLink></li>
-                    <li><NavLink to="#">EARPHONES</NavLink></li>
+                    <li><NavLink to="/speakers">SPEAKERS</NavLink></li>
+                    <li><NavLink to="/earphones">EARPHONES</NavLink></li>
                 </ul>
                 {/* <NavBar/> */}
                 <img className="cart" src={Cart} alt="cart" />

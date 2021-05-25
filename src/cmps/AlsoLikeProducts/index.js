@@ -1,0 +1,1 @@
+export { AlsoLikeProducts } from './AlsoLikeProducts'

@@ -4,8 +4,9 @@ import './CartModal.scss'
 import ReactDOM from 'react-dom'
 import { CartModalItemPreview } from '../CartModalItemPreview/CartModalItemPreview'
 import { ButtonFilled } from '../ButtonFilled'
+import { Link } from 'react-router-dom'
 
-export const CartModal = (props) => {
+export const CartModal = ({ onCheckoutClicked }) => {
 
     const cartModalRoot = document.getElementById('cart-modal')
 
@@ -24,7 +25,7 @@ export const CartModal = (props) => {
                         <p className="total-container-txt">TOTAL</p>
                         <h6>$ 5,396</h6>
                     </div>
-                    <ButtonFilled txt="CHECKOUT" />
+                    <Link to="/checkout" onClick={() => { onCheckoutClicked() }}><ButtonFilled txt="CHECKOUT" /></Link>
                 </div>
             </div>
         </div>,

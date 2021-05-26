@@ -1,0 +1,124 @@
+.checkout-page {
+    text-align: start;
+    margin-bottom: 140px;
+
+    .go-back {
+        text-align: start;
+        opacity: 0.5;
+        margin: 38px 0 80px;
+    }
+
+    .checkout-form {
+        background-color: white;
+        padding: 48px;
+        border: 0.5rem;
+        margin-right: 30px;
+        flex: 1;
+
+        h3 {
+            margin-bottom: 40px;
+        }
+
+        &-title {
+            text-transform: uppercase;
+            font-weight: 700;
+            font-size: 13px;
+            line-height: 25px;
+            letter-spacing: 1px;
+            color: #d87d4a;
+            margin-bottom: 16px;
+        }
+
+        .billing-details-container {
+            margin-bottom: 50px;
+
+            & > *:not(:last-child) {
+                flex: 1;
+            }
+
+            & > *:first-child {
+                margin-bottom: 24px;
+                margin-right: 16px;
+            }
+
+            & > *:last-child {
+                flex: 0.5;
+                margin-right: 16px;
+            }
+        }
+
+        .shipping-info-container {
+            margin-bottom: 60px;
+
+            & > *:first-child {
+                flex-basis: 100%;
+                margin-bottom: 24px;
+            }
+
+            & > *:nth-child(2) {
+                margin-right: 16px;
+            }
+
+            & > *:nth-child(3) {
+                margin-bottom: 24px;
+            }
+
+            & > *:nth-child(2),
+            & > *:nth-child(3) {
+                flex: 1;
+            }
+        }
+
+        .payment-methods {
+            font-weight: 700;
+            font-size: 12px;
+            line-height: 1rem;
+        }
+
+        .radio-container {
+            margin-bottom: 24px;
+
+            & > *:first-child {
+                margin-bottom: 16px;
+            }
+        }
+
+        .payment-details-inputs-container {
+            & > * {
+                flex: 1;
+            }
+            & > *:first-child {
+                margin-right: 16px;
+            }
+        }
+    }
+
+    .summary {
+        padding: 30px;
+        width: 350px;
+        background-color: white;
+        height: 100%;
+
+        h6 {
+            margin-bottom: 30px;
+        }
+
+        .checkout-txt {
+            opacity: 0.5;
+            margin-bottom: 8px;
+            text-transform: uppercase;
+
+            &:nth-of-type(3) {
+                margin-bottom: 24px;
+            }
+
+            &:last-of-type {
+                margin-bottom: 32px;
+            }
+        }
+
+        .items {
+            margin-bottom: 32px;
+        }
+    }
+}

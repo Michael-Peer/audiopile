@@ -5,9 +5,13 @@ import { ButtonFilled } from '../ButtonFilled'
 import './PurchaseModal.scss'
 
 import MarkTwo from '../../imgs/also-like/image-xx99-mark-two-headphones.jpg'
+import { useHistory } from 'react-router'
 
 
 export const PurchaseModal = (props) => {
+    const history = useHistory()
+
+    const onBackToHomeClicked = () => history.replace('/')
 
     return (
         <div className="purchase-modal">
@@ -28,7 +32,7 @@ export const PurchaseModal = (props) => {
                     <h6>$ 5,446</h6>
                 </div>
             </div>
-            <ButtonFilled txt="BACK TO HOME" />
+            <ButtonFilled txt="BACK TO HOME" onClick={onBackToHomeClicked} />
         </div>
     )
 }

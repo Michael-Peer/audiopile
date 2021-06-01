@@ -1,9 +1,11 @@
+@import '../../styles/variables';
+
 .custom-input-container {
     min-width: 300px;
 
     .custom-input {
         border: 1px solid #cfcfcf;
-        border-radius: 8px;
+        border-radius: $main-border-radius;
         padding-left: 24px;
         padding-top: 20px;
         padding-bottom: 20px;

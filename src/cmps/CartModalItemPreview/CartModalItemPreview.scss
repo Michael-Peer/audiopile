@@ -1,4 +1,5 @@
 @import '../../styles/mixins';
+@import '../../styles/variables';
 
 .cart-modal-item-preview {
     // margin-bottom: 24px;
@@ -7,7 +8,7 @@
         height: 64px;
         width: 64px;
         margin-right: 16px;
-        border-radius: 8px;
+        border-radius: $main-border-radius;
     }
     
     .product-details{

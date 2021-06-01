@@ -7,7 +7,7 @@
     }
     .img {
         margin-right: 30px;
-        border-radius: 8px;
+        border-radius: $main-border-radius;
         flex: 1;
         background-image: url("../../imgs/product-showcase/image-earphones-yx1.jpg");
         max-width: 540px;
@@ -41,7 +41,6 @@
             padding-left: 40px;
         }
 
-        
         @include for-mobile-layout {
             flex: unset;
         }

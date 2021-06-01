@@ -1,8 +1,9 @@
 @import "../../styles/mixins";
+@import '../../styles/variables';
 
 .first-showcase {
     background-color: #d87d4a;
-    border-radius: 8px;
+    border-radius: $main-border-radius;
 
     padding-left: 120px;
     padding-right: 95px;

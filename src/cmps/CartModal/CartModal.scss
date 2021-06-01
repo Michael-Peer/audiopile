@@ -1,7 +1,8 @@
 @import "../../styles/mixins";
+@import '../../styles/variables';
 
 .cart-modal {
-    border-radius: 8px;
+    border-radius: $main-border-radius;
     background-color: white;
     padding: 30px;
 

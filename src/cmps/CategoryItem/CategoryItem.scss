@@ -1,3 +1,8 @@
+// @import "../../styles/variables";
+@import "../../styles/main";
+@import '../../styles//mixins';
+
+
 .category-item {
     position: relative;
 
@@ -19,7 +24,22 @@
         height: 200px;
         width: 350px;
         background-color: #f1f1f1;
-        border-radius: 0.5rem;
+        // border-radius: 0.5rem;
+        border-radius: $main-border-radius;
         padding-top: 116px;
+        
+        @include for-wide-layout {
+            width: 280px;
+        }
+
+        @include for-pre-tablet-layout {
+            height: 165px;
+            padding-top: 88px;
+            max-width: 220px;
+        }
+
+        @include for-mobile-layout {
+            max-width: unset;
+        }
     }
 }

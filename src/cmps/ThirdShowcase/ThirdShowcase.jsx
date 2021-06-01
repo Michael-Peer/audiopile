@@ -7,7 +7,7 @@ export const ThirdShowcase = (props) => {
 
     return (
         <article className="third-showcase main-container flex">
-            <img src={Earphone} alt="earphones" />
+            <div className="img" />
             <section className="product-title-container">
                 <h4>YX1 EARPHONES</h4>
                 <ButtonTranparent txt="SEE PRODUCT"/>

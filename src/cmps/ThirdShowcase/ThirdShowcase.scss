@@ -1,15 +1,50 @@
+@import "../../styles/mixins";
+@import "../../styles/variables";
+
 .third-showcase {
-    img {
+    @include for-mobile-layout {
+        flex-direction: column;
+    }
+    .img {
         margin-right: 30px;
         border-radius: 8px;
+        flex: 1;
+        background-image: url("../../imgs/product-showcase/image-earphones-yx1.jpg");
+        max-width: 540px;
+        height: 320px;
+
+        @include for-pre-tablet-layout {
+            max-width: 340px;
+            margin-right: 10px;
+            background-image: url("../../imgs/product-showcase/tablet/image-earphones-yx1.jpg");
+            background-size: cover;
+        }
+
+        @include for-mobile-layout {
+            background-image: url("../../imgs/product-showcase/mobile/image-earphones-yx1.jpg");
+            margin-right: unset;
+            flex: unset;
+            margin-bottom: 24px;
+            height: 200px;
+        }
     }
     .product-title-container {
         text-align: start;
         background-color: #f1f1f1;
-        border-radius: 8px;
-        width: 100%;
+        border-radius: $main-border-radius;
+        flex: 1;
+        padding-left: 80px;
         padding-top: 100px;
-        padding: 100px;
+        padding-bottom: 100px;
+
+        @include for-pre-tablet-layout {
+            padding-left: 40px;
+        }
+
+        
+        @include for-mobile-layout {
+            flex: unset;
+        }
 
         h4 {
             margin-bottom: 32px;

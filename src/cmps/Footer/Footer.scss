@@ -1,3 +1,5 @@
+@import "../../styles/mixins";
+
 .footer {
     background-color: #101010;
     color: white;
@@ -6,6 +8,13 @@
 
     .main-nav {
         margin-bottom: 36px;
+
+        ul {
+            @include for-mobile-layout {
+                flex-direction: column;
+            }
+        }
+
         li {
             font-size: 13px;
             line-height: 25px;
@@ -14,15 +23,60 @@
             &:not(:last-child) {
                 margin-right: 35px;
             }
+
+            &:hover {
+                color: #d87d4a;
+            }
+
+            @include for-mobile-layout {
+                &:not(:last-child) {
+                    margin-right: unset;
+                    margin-bottom: 16px;
+                }
+            }
+        }
+
+        @include for-pre-tablet-layout {
+            flex-direction: column;
+            align-items: flex-start !important;
+            margin-bottom: 32px;
+        }
+
+        @include for-mobile-layout {
+            margin-bottom: 48px;
+            text-align: center;
+            align-items: center !important;
+        }
+
+        .logo {
+            @include for-pre-tablet-layout {
+                margin-bottom: 32px;
+            }
+
+            @include for-mobile-layout {
+                margin-bottom: 48px;
+            }
         }
     }
 
-    p {
-        max-width: 540px;
-        opacity: 0.5;
+    &-content-container {
 
-        &:first-child {
-            margin-bottom: 54px;
+        @include for-mobile-layout {
+            flex-direction: column;
+            text-align: center;
+        }
+        p {
+            max-width: 540px;
+            opacity: 0.5;
+
+            &:first-child {
+                margin-bottom: 54px;
+            }
+
+            @include for-mobile-layout {
+                max-width: unset;
+                margin-bottom: 48px;
+            }
         }
     }
 
@@ -30,6 +84,18 @@
         flex: 1;
         justify-content: flex-end;
         align-items: center;
+
+
+
+        @include for-pre-tablet-layout {
+            align-self: flex-end;
+        }
+
+        
+        @include for-mobile-layout {
+           justify-content: center;
+           width: 100%;
+        }
 
         & > *:not(:last-child) {
             margin-right: 16px;

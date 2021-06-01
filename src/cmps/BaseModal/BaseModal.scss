@@ -1,0 +1,32 @@
+@import '../../styles/mixins';
+
+.base-modal {
+    &.modal-layer {
+        position: fixed;
+        z-index: 1300;
+        background-color: rgba(0, 0, 0, 0.5);
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+
+        .modal-wrapper {
+            height: 100%;
+            outline: 0;
+            position: absolute;
+            top: 150px;
+            right: 165px;
+
+            @include for-pre-tablet-layout {
+                right: 40px;
+                top: 120px;
+            }
+
+            @include for-mobile-layout{
+                right: 13px;
+                top: 110px;
+                left: 13px;
+            }
+        }
+    }
+}

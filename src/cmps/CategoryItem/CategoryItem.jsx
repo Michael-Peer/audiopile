@@ -1,16 +1,15 @@
 
 
 import { ButtonOutlined } from '../ButtonOutlined/ButtonOutlined'
-import Headphones from '../../imgs/categories/image-headphones.png'
 import './CategoryItem.scss'
 
-export const CategoryItem = (props) => {
+export const CategoryItem = ({ imgSrc, productName }) => {
 
     return (
         <div className="category-item">
+            <img src={imgSrc} />
             <div className="background">
-                <img src={Headphones} />
-                <h6 className="title">HEADPHONES</h6>
+                <h6 className="title">{productName}</h6>
                 <ButtonOutlined txt="SHOP" />
             </div>
         </div>

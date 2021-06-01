@@ -1,41 +1,56 @@
-.cart-modal {
-    &.modal-layer {
-        position: fixed;
-        z-index: 1300;
-        background-color: rgba(0, 0, 0, 0.5);
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
+@import "../../styles/mixins";
 
-        .modal-wrapper {
-            height: 100%;
-            outline: 0;
-            position: absolute;
-            top: 150px;
-            right: 165px;
+.cart-modal {
+    border-radius: 8px;
+    background-color: white;
+    padding: 30px;
+
+    .remove-all-txt {
+        opacity: 0.5;
+        margin-left: 150px;
+
+        @include for-mobile-layout {
+            margin-left: unset;
         }
     }
 
-    .modal {
-        border-radius: 8px;
-        background-color: white;
-        padding: 30px;
+    .modal-header {
+        margin-bottom: 32px;
 
-        .remove-all-txt {
-            opacity: 0.5;
-            margin-left: 150px;
+        @include for-mobile-layout {
+            justify-content: space-between;
+        }
+    }
+
+    .cart-items {
+        & > *:not(:last-child) {
+            margin-bottom: 24px;
         }
 
-        .modal-header {
+        & > *:last-child {
             margin-bottom: 32px;
         }
 
-        .total-container {
-            margin-bottom: 24px;
-            &-txt {
-                opacity: 0.5;
-                margin-right: 200px;
+        @include for-mobile-layout {
+            & > * {
+                justify-content: space-between;
+            }
+        }
+    }
+
+    .total-container {
+        margin-bottom: 24px;
+
+        @include for-mobile-layout {
+            justify-content: space-between;
+        }
+
+        &-txt {
+            opacity: 0.5;
+            margin-right: 200px;
+
+            @include for-mobile-layout {
+                margin-right: unset;
             }
         }
     }

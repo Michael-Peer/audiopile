@@ -9,7 +9,6 @@ import { HeadphoneCategoryPage } from './pages/HeadphoneCategoryPage/HeadphoneCa
 import { SpeakersCategoryPage } from './pages/SpeakersCategoryPage/SpeakersCategoryPage';
 import { EarphonesCategoryPage } from './pages/EarphonesCategoryPage/EarphonesCategoryPage';
 import { ProductDetailPage } from './pages/ProductDetailPage/ProductDetailPage';
-import { CartModal } from './cmps/CartModal/CartModal';
 import { CheckoutPage } from './pages/CheckoutPage/CheckoutPage';
 
 

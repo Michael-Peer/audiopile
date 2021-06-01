@@ -2,10 +2,10 @@
 
 import './ButtonFilled.scss'
 
-export const ButtonFilled = ({ txt }) => {
+export const ButtonFilled = ({ txt, onClick = () => {}, width }) => {
 
     return (
-        <div className="button-filled flex center">{txt}</div>
+        <div style={{ width: width ? width + 'px' : '' }} className="button-filled flex center" onClick={() => { onClick() }}>{txt}</div>
     )
 }
 

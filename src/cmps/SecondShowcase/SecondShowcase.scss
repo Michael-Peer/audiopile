@@ -1,13 +1,21 @@
+@import "../../styles/mixins";
+
 .second-showcase {
     background-color: #979797;
-    background-image: url('../../imgs/product-showcase/image-speaker-zx7.jpg');
+    background-image: url("../../imgs/product-showcase/image-speaker-zx7.jpg");
     background-repeat: no-repeat;
     padding: 100px;
     text-align: start;
     margin-bottom: 48px;
-    border-radius: .5rem;
+    border-radius: 0.5rem;
 
-    h4{
+    @include for-mobile-layout {
+        background-image: url("../../imgs/product-showcase/mobile/image-speaker-zx7.jpg");
+        padding-left: 24px;
+        background-size: cover;
+    }
+
+    h4 {
         margin-bottom: 32px;
     }
 }

@@ -1,3 +1,5 @@
+@import "../../styles/mixins";
+
 .checkout-page {
     text-align: start;
     margin-bottom: 140px;
@@ -6,6 +8,16 @@
         text-align: start;
         opacity: 0.5;
         margin: 38px 0 80px;
+
+        @include for-pre-tablet-layout {
+            margin: 38px 0 24px;
+        }
+    }
+
+    .checkout {
+        @include for-pre-tablet-layout {
+            flex-direction: column;
+        }
     }
 
     .checkout-form {
@@ -14,6 +26,10 @@
         border: 0.5rem;
         margin-right: 30px;
         flex: 1;
+
+        @include for-pre-tablet-layout {
+            margin-right: unset;
+        }
 
         h3 {
             margin-bottom: 40px;
@@ -99,8 +115,12 @@
         background-color: white;
         height: 100%;
 
-        h6 {
+        .summary-title {
             margin-bottom: 30px;
+        }
+
+        .total-price {
+            color: #d87d4a;
         }
 
         .checkout-txt {
@@ -119,6 +139,10 @@
 
         .items {
             margin-bottom: 32px;
+
+            & > *:not(:last-child) {
+                margin-bottom: 24px;
+            }
         }
     }
 }

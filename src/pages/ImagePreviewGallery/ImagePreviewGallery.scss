@@ -1,12 +1,46 @@
+@import "../../styles/mixins";
+@import "../../styles/variables";
 .image-preview-gallery {
+    @include for-mobile-layout {
+        flex-direction: column;
+        align-items: unset;
+        justify-content: unset;
+    }
+
     img {
-        border-radius: 8px;
+        border-radius: $main-border-radius;
+
+        @include for-pre-tablet-layout {
+            max-width: 400px;
+        }
+
+        @include for-mobile-layout {
+            width: 100%;
+        }
     }
     .left-container {
         margin-right: 30px;
 
+        @include for-pre-tablet-layout {
+            max-width: 275px;
+            margin-right: 18px;
+        }
+
+        @include for-mobile-layout {
+            max-width: unset;
+            margin-right: unset;
+
+            & > * {
+                margin-bottom: 20px !important;
+            }
+        }
+
         & > *:first-child {
             margin-bottom: 32px;
+
+            @include for-pre-tablet-layout {
+                margin-bottom: 18px;
+            }
         }
     }
 }

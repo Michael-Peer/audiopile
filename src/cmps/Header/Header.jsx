@@ -1,9 +1,11 @@
 import './Header.scss'
 import Cart from '../../imgs/icon-cart.svg'
 import Logo from '../../imgs/logo.svg'
+import Hamburger from '../../imgs/icon-hamburger.svg'
 import { NavLink } from 'react-router-dom'
 import { useState } from 'react'
 import { CartModal } from '../CartModal/CartModal'
+import { BaseModal } from '../BaseModal/BaseModal'
 
 export const Header = (props) => {
     const [isModalOpen, setIsModalOpen] = useState(false)
@@ -11,7 +13,8 @@ export const Header = (props) => {
     return (
         <header className="header">
             <nav className="main-nav main-container flex align-center space-between">
-                {isModalOpen && <CartModal onCheckoutClicked={() => { setIsModalOpen(false) }} />}
+                {isModalOpen && <BaseModal><CartModal onCheckoutClicked={() => { setIsModalOpen(false) }} /></BaseModal>}
+                <img src={Hamburger} alt="" className="hamburger" />
                 <img className="logo" src={Logo} alt="logo" />
                 <ul className="clean-list flex">
                     <li><NavLink to="/">HOME</NavLink></li>

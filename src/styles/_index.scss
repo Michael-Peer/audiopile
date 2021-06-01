@@ -1,3 +1,5 @@
+@import "../styles/mixins";
+
 * {
   box-sizing: border-box;
 }
@@ -45,7 +47,7 @@ h6 {
   font-weight: 700;
 }
 
-p{
+p {
   margin: 0;
 }
 
@@ -53,18 +55,36 @@ h1 {
   font-size: 3.5rem; //56px
   line-height: 3.625rem;
   letter-spacing: 2px;
+
+  @include for-mobile-layout {
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+    letter-spacing: 1.2px;
+  }
 }
 
 h2 {
   font-size: 2.5rem; //40px
   line-height: 2.75rem;
   letter-spacing: 1.5px;
+
+  @include for-mobile-layout {
+    font-size: 1.75rem;
+    line-height: 2.375rem;
+    letter-spacing: 1px;
+  }
 }
 
 h3 {
   font-size: 2rem; //32px
   line-height: 2.25rem;
   letter-spacing: 1.15px;
+
+  @include for-mobile-layout {
+    font-size: 1.5rem;
+    line-height: 2.25rem;
+    letter-spacing: 1px;
+  }
 }
 
 h4 {

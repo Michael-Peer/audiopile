@@ -1,6 +1,20 @@
-.main-container{
+@import "./mixins";
+
+.main-container {
     max-width: 1110px;
     margin: 0 auto;
+
+    @include for-wide-layout {
+        max-width: 900px;
+    }
+
+    @include for-pre-tablet-layout {
+        max-width: 680px;
+    }
+
+    @include for-mobile-layout {
+        max-width: 325px;
+    }
 }
 
 .flex {

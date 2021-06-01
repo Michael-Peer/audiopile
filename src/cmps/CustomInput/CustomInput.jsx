@@ -3,12 +3,12 @@
 import { Fragment } from 'react'
 import './CustomInput.scss'
 
-export const CustomInput = (props) => {
+export const CustomInput = ({placeholder, label}) => {
 
     return (
         <div className="custom-input-container">
-            <label className="custom-input-label" htmlFor="input">Name</label>
-            <input type="email" className="custom-input" id="input"  placeholder="Insert your name"></input>
+            <label className="custom-input-label" htmlFor={label}>{label}</label>
+            <input type="text" className="custom-input" id={label}  placeholder={placeholder}></input>
         </div>
     )
 }

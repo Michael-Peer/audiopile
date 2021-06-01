@@ -4,6 +4,8 @@
     font-weight: 700;
     letter-spacing: 1px;
     opacity: .5;
+    cursor: pointer;
+
 
     &::after {
         content: url('../../imgs/icon-arrow-right.svg');
@@ -11,5 +13,8 @@
         font-size: 16px;
         font-weight: 700;
         margin-left: 13px;
+    }
+    &:hover {
+        color: #D87D4A
     }
 }

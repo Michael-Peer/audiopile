@@ -2,17 +2,16 @@
 
 import './AlsoLikeItemPreview.scss'
 import { ButtonFilled } from '../ButtonFilled/ButtonFilled'
-import MarkOne from '../../imgs/also-like/image-xx99-mark-one-headphones.jpg'
 
-export const AlsoLikeItemPreview = (props) => {
+export const AlsoLikeItemPreview = ({imgUrl, productName}) => {
 
     return (
         <div className="also-like-item-preview flex column align-center">
             <div className="img-wrapper">
-                <img src={MarkOne} alt="" />
+                <img src={imgUrl} />
             </div>
-            <h5 className="product-name">XX99 MARK I</h5>
-            <ButtonFilled txt="SEE PRODUCT" />
+            <h5 className="product-name">{productName}</h5>
+            <ButtonFilled txt="SEE PRODUCT" width={160} />
         </div>
     )
 }

@@ -1,10 +1,9 @@
+@import "../../styles/mixins";
+
 .header {
     background-color: #191919;
     color: white;
     padding-top: 24px;
-
-    .logo {
-    }
 
     .main-nav {
         margin-bottom: 36px;
@@ -16,6 +15,33 @@
             &:not(:last-child) {
                 margin-right: 35px;
             }
+
+            &:hover {
+                color: #d87d4a;
+            }
+
+            @include for-pre-tablet-layout {
+                display: none;
+            }
+        }
+
+        @include for-pre-tablet-layout {
+            justify-content: flex-start !important;
+        }
+    }
+
+    .logo {
+        @include for-pre-tablet-layout {
+            margin-right: auto;
+        }
+    }
+
+    .hamburger {
+        display: none;
+
+        @include for-pre-tablet-layout {
+            margin-right: 42px;
+            display: inline-block;
         }
     }
 

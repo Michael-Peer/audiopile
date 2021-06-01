@@ -1,13 +1,39 @@
+@import '../../styles/variables';
+@import '../../styles//mixins';
+
 .also-like-item-preview {
 
     img {
         width: 350px;
         height: 320px;
-        border-radius: 8px;
+        border-radius: $main-border-radius;
+        transition: all 1s;
+        cursor: pointer;
+
+        @include for-pre-tablet-layout {
+            height: 320px;
+            max-width: 220px;
+        }
+
+        @include for-mobile-layout {
+            max-width: unset;
+            height: unset;
+            width: 100%;
+        }
+
+
+
+        &:hover{
+            transform: scale(1.05);
+        }
     }
 
     .img-wrapper{
         margin-bottom: 40px;
+
+        @include for-mobile-layout{
+            margin-bottom: 32px;
+        }
     }
 
     .product-name{

@@ -1,0 +1,25 @@
+@import "./variables";
+
+@mixin button-txt {
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+@mixin for-wide-layout {
+    @media (max-width: $wide-breakpoint) {
+        @content;
+    }
+}
+
+@mixin for-pre-tablet-layout {
+    @media (max-width: $pre-tablet-breakpoint) {
+        @content;
+    }
+}
+
+@mixin for-mobile-layout {
+    @media (max-width: $mobile-breakpoint) {
+        @content;
+    }
+}

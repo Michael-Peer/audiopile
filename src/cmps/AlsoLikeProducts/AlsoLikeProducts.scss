@@ -1,14 +1,39 @@
+@import "../../styles//mixins";
+
 .also-like-products {
     text-align: center;
     margin-bottom: 180px;
 
+    @include for-pre-tablet-layout {
+        margin-bottom: 160px;
+    }
+
+    
+
     .title {
         margin-bottom: 64px;
+
+        @include for-mobile-layout {
+            margin-bottom: 40px;
+        }
     }
 
     .preview-list-demo {
+        @include for-mobile-layout {
+            flex-direction: column;
+        }
+
         & > *:not(:last-child) {
             margin-right: 30px;
+
+            @include for-pre-tablet-layout {
+                margin-right: 10px;
+            }
+
+            @include for-mobile-layout {
+                margin-right: unset;
+                margin-bottom: 56px;
+            }
         }
     }
 }

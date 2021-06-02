@@ -8,11 +8,23 @@
         max-width: 900px;
     }
 
+    @include for-medium-layout{
+        max-width: 800px;
+    }
+
+    @include for-small-medium-layout{
+        max-width: 750px;
+    }
+
     @include for-pre-tablet-layout {
         max-width: 680px;
     }
 
     @include for-mobile-layout {
+        max-width: 400px;
+    }
+
+    @include for-small-mobile-layout {
         max-width: 325px;
     }
 }

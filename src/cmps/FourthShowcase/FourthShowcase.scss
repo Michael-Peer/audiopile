@@ -18,6 +18,11 @@
         border-radius: 0.5rem;
         background-image: url("../../imgs/product-showcase/image-best-gear.jpg");
 
+        @include for-wide-layout {
+            background-size: cover;
+            background-position: center;
+        }
+
         @include for-pre-tablet-layout {
             background-image: url("../../imgs/product-showcase/tablet/image-best-gear.jpg");
             width: 100%;

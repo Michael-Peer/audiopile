@@ -6,15 +6,16 @@ import Speakers from '../../imgs/categories/image-speakers.png'
 import Earphones from '../../imgs/categories/image-earphones.png'
 
 import './CategoryList.scss'
+import { useState, useEffect } from 'react'
 
-export const CategoryList = (props) => {
+export const CategoryList = () => {
 
     return (
         <div>
             <ul className="category-list main-container clean-list flex space-between">
-                <CategoryItem productName="HEADPHONES" imgSrc={Headphones} />
-                <CategoryItem productName="SPEAKERS" imgSrc={Speakers}/>
-                <CategoryItem productName="EARPHONES" imgSrc={Earphones}/>
+                <CategoryItem productName="HEADPHONES" imgSrc={Headphones} redirectTo="/headphones" />
+                <CategoryItem productName="SPEAKERS" imgSrc={Speakers} redirectTo="/speakers" />
+                <CategoryItem productName="EARPHONES" imgSrc={Earphones} redirectTo="/earphones" />
             </ul>
         </div>
     )

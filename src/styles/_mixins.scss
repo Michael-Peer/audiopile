@@ -12,14 +12,46 @@
     }
 }
 
+@mixin for-small-wide-layout {
+    @media (max-width:$small-wide-breakpoint
+    ) {
+        @content;
+    }
+}
+
+
+@mixin for-medium-layout {
+    @media (max-width: $medium-breakpoint) {
+        @content;
+    }
+}
+
+@mixin for-small-medium-layout {
+    @media (max-width: $small-medium-breakpoing) {
+        @content;
+    }
+}
+
 @mixin for-pre-tablet-layout {
     @media (max-width: $pre-tablet-breakpoint) {
         @content;
     }
 }
 
+@mixin for-small-layout {
+    @media (max-width: $small-breakpoint) {
+        @content;
+    }
+}
+
 @mixin for-mobile-layout {
     @media (max-width: $mobile-breakpoint) {
+        @content;
+    }
+}
+
+@mixin for-small-mobile-layout {
+    @media (max-width: $small-mobile-breakpoint) {
         @content;
     }
 }

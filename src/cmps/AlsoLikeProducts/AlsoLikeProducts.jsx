@@ -21,7 +21,7 @@ import ZX9Mobile from '../../imgs/also-like/mobile/image-zx9-speaker.jpg'
 
 
 
-export const AlsoLikeProducts = (props) => {
+export const AlsoLikeProducts = () => {
     const [width, setWidth] = useState(window.innerWidth)
 
     //calculate screen width
@@ -33,13 +33,15 @@ export const AlsoLikeProducts = (props) => {
         return () => window.removeEventListener('resize', handleResize)
     }, [])
 
+
+
     return (
         <div className="also-like-products ">
             <h3 className="title">you may also like</h3>
             <div className="preview-list-demo flex">
                 <AlsoLikeItemPreview productName="XX99 MARK I" imgUrl={width > 780 ? MarkOne : MarkOneMobile} />
                 <AlsoLikeItemPreview productName="XX59" imgUrl={width > 780 ? XX59 : XX59Mobile} />
-                <AlsoLikeItemPreview productName="ZX9 SPEAKER" imgUrl={width > 780 ? ZX9 : ZX9Mobile}/>
+                <AlsoLikeItemPreview productName="ZX9 SPEAKER" imgUrl={width > 780 ? ZX9 : ZX9Mobile} />
             </div>
 
         </div>

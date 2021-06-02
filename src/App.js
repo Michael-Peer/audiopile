@@ -21,7 +21,7 @@ function App() {
           <Route component={HeadphoneCategoryPage} path="/headphones" />
           <Route component={SpeakersCategoryPage} path="/speakers" />
           <Route component={EarphonesCategoryPage} path="/earphones" />
-          <Route component={ProductDetailPage} path="/detail" />
+          <Route component={ProductDetailPage} path="/products/:id" />
           <Route component={CheckoutPage} path="/checkout" />
           <Route component={AudiopileApp} path="/" />
         </Switch>

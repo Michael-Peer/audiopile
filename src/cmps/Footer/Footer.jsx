@@ -7,6 +7,7 @@ import TwitterIcon from '../../imgs/social-networks/icon-twitter.svg'
 import InstagramIcon from '../../imgs/social-networks/icon-instagram.svg'
 
 import './Footer.scss'
+import { NavLink } from 'react-router-dom'
 
 export const Footer = (props) => {
 
@@ -15,10 +16,10 @@ export const Footer = (props) => {
             <nav className="main-nav main-container flex align-center space-between main-container">
                 <img className="logo" src={Logo} alt="logo" />
                 <ul className="clean-list flex">
-                    <li><a href="#">HOME</a></li>
-                    <li><a href="#">HEADPHONES</a></li>
-                    <li><a href="#">SPEAKERS</a></li>
-                    <li><a href="#">EARPHONES</a></li>
+                    <li><NavLink to="/">HOME</NavLink></li>
+                    <li><NavLink to="/headphones">HEADPHONES</NavLink></li>
+                    <li><NavLink to="/speakers">SPEAKERS</NavLink></li>
+                    <li><NavLink to="/earphones">EARPHONES</NavLink></li>
                 </ul>
             </nav>
             <div className="footer-content-container flex main-container">

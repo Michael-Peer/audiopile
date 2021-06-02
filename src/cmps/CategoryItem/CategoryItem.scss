@@ -32,6 +32,10 @@
             width: 280px;
         }
 
+        @include for-medium-layout{
+            width: 240px;
+        }
+
         @include for-pre-tablet-layout {
             height: 165px;
             padding-top: 88px;

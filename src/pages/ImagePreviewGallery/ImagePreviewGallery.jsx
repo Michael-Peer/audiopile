@@ -32,7 +32,7 @@ export const ImagePreviewGallery = ({ gallery }) => {
     const getImageBasedOnSize = (image) => {
         if (width > 768) {
             return image.desktop
-        } else if (width < 768 && width < 500) {
+        } else if (width < 768 && width > 500) {
             console.log('tablet', image.tablet);
             return image.tablet
         } else {

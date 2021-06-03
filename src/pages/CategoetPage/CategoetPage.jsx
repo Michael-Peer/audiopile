@@ -1,19 +1,24 @@
 
 
+import './CategoetPage.scss'
+
+
+
 import { CategoryPageItemLeft } from '../../cmps/CategoryPageItemLeft/CategoryPageItemLeft'
 import { CategoryTitle } from '../../cmps/CategoryTitle/CategoryTitle'
 import { CategoryList } from '../../cmps/CategoryList/CategoryList'
 import { FourthShowcase } from '../../cmps/FourthShowcase/FourthShowcase'
 
-import './HeadphoneCategoryPage.scss'
 import { CategoryPageItemRight } from '../../cmps/CategoryPageItemRight/CategoryPageItemRight'
 import { useEffect, useState } from 'react'
 
 import { productService } from '../../services/productService'
+import { useParams } from 'react-router'
 
-export const HeadphoneCategoryPage = () => {
+export const CategoetPage = () => {
     const [width, setWidth] = useState(window.innerWidth)
-    const products = productService.getByCategory('headphones')
+    const { category } = useParams()
+    const products = productService.getByCategory(category)
 
     console.log('products', products);
 

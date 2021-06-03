@@ -6,7 +6,6 @@ import Speakers from '../../imgs/categories/image-speakers.png'
 import Earphones from '../../imgs/categories/image-earphones.png'
 
 import './CategoryList.scss'
-import { useState, useEffect } from 'react'
 
 export const CategoryList = () => {
 

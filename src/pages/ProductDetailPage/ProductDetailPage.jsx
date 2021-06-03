@@ -1,24 +1,24 @@
 
 
 import './ProductDetailPage.scss'
+
+import { Fragment, useEffect, useState } from 'react';
+import { useParams } from 'react-router';
+import { productService } from '../../services/productService';
+
 import { ButtonFilled } from '../../cmps/ButtonFilled/ButtonFilled';
 import { CartCounter } from '../../cmps/CartCounter/CartCounter'
-import MarkTwo from '../../imgs/mark-two/image-product.jpg'
-import MarkTwoTablet from '../../imgs/mark-two/tablet/image-product.jpg'
-import MarkTwoMobile from '../../imgs/mark-two/mobile/image-product.jpg'
-
 import { InTheBoxCounter } from '../../cmps/InTheBoxCounter/InTheBoxCounter';
 import { ImagePreviewGallery } from '../ImagePreviewGallery/ImagePreviewGallery';
 import { AlsoLikeProducts } from '../../cmps/AlsoLikeProducts/AlsoLikeProducts';
 import { CategoryList } from '../../cmps/CategoryList/CategoryList'
 import { FourthShowcase } from '../../cmps/FourthShowcase/FourthShowcase'
-import { Fragment, useEffect, useState } from 'react';
-import { useParams } from 'react-router';
-import { productService } from '../../services/productService';
+
 
 export const ProductDetailPage = () => {
     const [width, setWidth] = useState(window.innerWidth)
     const [product, setProduct] = useState(null)
+    const [count, setCount] = useState(0)
     const { id } = useParams()
 
     useEffect(() => {
@@ -46,8 +46,15 @@ export const ProductDetailPage = () => {
         }
     }
 
+
+    const onCounterClicked = (diff) => {
+        console.log('onCountClickedHandler');
+        const counter = count + diff
+        setCount(counter < 0 ? 0 : counter)
+    }
+
     return (
-        <Fragment>
+        <>
             {product &&
                 <article className="product-detail main-container">
                     <p className="go-back">Go Back</p>
@@ -59,7 +66,7 @@ export const ProductDetailPage = () => {
                             <p className="product-txt">{product.description}</p>
                             <h6 className="price">$ {product.price}</h6>
                             <div className="cart-actions-container flex">
-                                <CartCounter />
+                                <CartCounter count={count} onCounterClicked={onCounterClicked} />
                                 <ButtonFilled txt="ADD TO CART" width={160} />
                             </div>
                         </div>
@@ -89,14 +96,14 @@ export const ProductDetailPage = () => {
                     </section>
 
                     <section className="also-like">
-                        <AlsoLikeProducts />
+                        <AlsoLikeProducts othersList={product.others} />
                     </section>
 
                     <CategoryList />
 
                     <FourthShowcase />
                 </article>}
-        </Fragment>
+        </>
     )
 }
 

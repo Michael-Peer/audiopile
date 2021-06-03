@@ -1,0 +1,1 @@
+export { CategoetPage } from './CategoetPage'

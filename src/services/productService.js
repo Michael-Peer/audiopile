@@ -512,5 +512,5 @@ function getById(id) {
 
 function getByCategory(category = 'headphones') {
     const headphones = products.filter(product => product.category === category)
-    console.log('headphones', headphones);
+    return headphones
 }

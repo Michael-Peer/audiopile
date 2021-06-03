@@ -36,6 +36,12 @@
         }
     }
 
+    .cart,
+    .hamburger,
+    .logo {
+        cursor: pointer;
+    }
+
     .hamburger {
         display: none;
 

@@ -10,6 +10,7 @@ import { SpeakersCategoryPage } from './pages/SpeakersCategoryPage/SpeakersCateg
 import { EarphonesCategoryPage } from './pages/EarphonesCategoryPage/EarphonesCategoryPage';
 import { ProductDetailPage } from './pages/ProductDetailPage/ProductDetailPage';
 import { CheckoutPage } from './pages/CheckoutPage/CheckoutPage';
+import { CategoetPage } from './pages/CategoetPage/CategoetPage';
 
 
 function App() {
@@ -18,11 +19,12 @@ function App() {
       <div className="App">
         <Header />
         <Switch>
-          <Route component={HeadphoneCategoryPage} path="/headphones" />
+          {/* <Route component={HeadphoneCategoryPage} path="/headphones" />
           <Route component={SpeakersCategoryPage} path="/speakers" />
-          <Route component={EarphonesCategoryPage} path="/earphones" />
+          <Route component={EarphonesCategoryPage} path="/earphones" /> */}
           <Route component={ProductDetailPage} path="/products/:id" />
           <Route component={CheckoutPage} path="/checkout" />
+          <Route component={CategoetPage} path="/:category"/>
           <Route component={AudiopileApp} path="/" />
         </Switch>
         <Footer />

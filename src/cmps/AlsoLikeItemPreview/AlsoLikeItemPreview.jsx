@@ -2,8 +2,10 @@
 
 import './AlsoLikeItemPreview.scss'
 import { ButtonFilled } from '../ButtonFilled/ButtonFilled'
+import { useHistory } from 'react-router'
 
-export const AlsoLikeItemPreview = ({imgUrl, productName}) => {
+export const AlsoLikeItemPreview = ({ imgUrl, productName, id }) => {
+    const history = useHistory()
 
     return (
         <div className="also-like-item-preview flex column align-center">
@@ -11,7 +13,7 @@ export const AlsoLikeItemPreview = ({imgUrl, productName}) => {
                 <img src={imgUrl} />
             </div>
             <h5 className="product-name">{productName}</h5>
-            <ButtonFilled txt="SEE PRODUCT" width={160} />
+            <ButtonFilled txt="SEE PRODUCT" width={160} onClick={() => { history.push(`/products/${id}`) }} />
         </div>
     )
 }

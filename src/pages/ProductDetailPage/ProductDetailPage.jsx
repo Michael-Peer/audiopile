@@ -2,8 +2,8 @@
 
 import './ProductDetailPage.scss'
 
-import { Fragment, useEffect, useState } from 'react';
-import { useParams } from 'react-router';
+import { useEffect, useState } from 'react';
+import { useHistory, useParams } from 'react-router';
 import { productService } from '../../services/productService';
 
 import { ButtonFilled } from '../../cmps/ButtonFilled/ButtonFilled';
@@ -13,13 +13,17 @@ import { ImagePreviewGallery } from '../ImagePreviewGallery/ImagePreviewGallery'
 import { AlsoLikeProducts } from '../../cmps/AlsoLikeProducts/AlsoLikeProducts';
 import { CategoryList } from '../../cmps/CategoryList/CategoryList'
 import { FourthShowcase } from '../../cmps/FourthShowcase/FourthShowcase'
+import { useDispatch } from 'react-redux';
+import { addToCart } from '../../store/actions/cartActions';
 
 
 export const ProductDetailPage = () => {
     const [width, setWidth] = useState(window.innerWidth)
     const [product, setProduct] = useState(null)
-    const [count, setCount] = useState(0)
+    const [count, setCount] = useState(1)
     const { id } = useParams()
+    const dispatch = useDispatch()
+    const history = useHistory()
 
     useEffect(() => {
         const product = productService.getById(+id)
@@ -53,21 +57,27 @@ export const ProductDetailPage = () => {
         setCount(counter < 0 ? 0 : counter)
     }
 
+    const onAddToCartClicked = () => {
+        product.quantity = count
+        if(!product.quantity) return
+        dispatch(addToCart(product))
+    }
+
     return (
         <>
             {product &&
                 <article className="product-detail main-container">
-                    <p className="go-back">Go Back</p>
+                    <p className="go-back" onClick={() => {history.goBack()}}>Go Back</p>
                     <section className="product-preview-container flex">
                         <img src={getImageBasedOnSize()} alt="headphone" />
                         <div className="txt-wrapper flex column justify-center">
                             <h3 className="product-label">New Product</h3>
                             <h2 className="product-title">{product.name}</h2>
                             <p className="product-txt">{product.description}</p>
-                            <h6 className="price">$ {product.price}</h6>
+                            <h6 className="price">$ {product.price.toLocaleString()}</h6>
                             <div className="cart-actions-container flex">
                                 <CartCounter count={count} onCounterClicked={onCounterClicked} />
-                                <ButtonFilled txt="ADD TO CART" width={160} />
+                                <ButtonFilled txt="ADD TO CART" width={160} onClick={onAddToCartClicked} />
                             </div>
                         </div>
                     </section>

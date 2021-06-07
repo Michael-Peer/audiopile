@@ -9,6 +9,7 @@
     .remove-all-txt {
         opacity: 0.5;
         margin-left: 150px;
+        cursor: pointer;
 
         @include for-mobile-layout {
             margin-left: unset;
@@ -17,10 +18,11 @@
 
     .modal-header {
         margin-bottom: 32px;
+        justify-content: space-between;
 
-        @include for-mobile-layout {
-            justify-content: space-between;
-        }
+        // @include for-mobile-layout {
+        //     justify-content: space-between;
+        // }
     }
 
     .cart-items {
@@ -41,10 +43,11 @@
 
     .total-container {
         margin-bottom: 24px;
+        justify-content: space-between;
 
-        @include for-mobile-layout {
-            justify-content: space-between;
-        }
+        // @include for-mobile-layout {
+        //     justify-content: space-between;
+        // }
 
         &-txt {
             opacity: 0.5;

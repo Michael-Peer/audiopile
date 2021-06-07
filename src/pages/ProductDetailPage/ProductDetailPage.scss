@@ -8,6 +8,8 @@
         text-align: start;
         opacity: 0.5;
         margin: 56px 0 80px;
+        cursor: pointer;
+
 
         @include for-mobile-layout {
             margin: 16px 0 24px;

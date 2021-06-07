@@ -5,9 +5,6 @@ import { Header } from './cmps/Header/Header'
 import { Footer } from './cmps/Footer/Footer';
 import { AudiopileApp } from './pages/AudiopileApp/AudiopileApp';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
-import { HeadphoneCategoryPage } from './pages/HeadphoneCategoryPage/HeadphoneCategoryPage';
-import { SpeakersCategoryPage } from './pages/SpeakersCategoryPage/SpeakersCategoryPage';
-import { EarphonesCategoryPage } from './pages/EarphonesCategoryPage/EarphonesCategoryPage';
 import { ProductDetailPage } from './pages/ProductDetailPage/ProductDetailPage';
 import { CheckoutPage } from './pages/CheckoutPage/CheckoutPage';
 import { CategoetPage } from './pages/CategoetPage/CategoetPage';

@@ -1,17 +1,5 @@
 
 import { useEffect, useState } from 'react'
-import Image1 from '../../imgs/mark-two/image-gallery-1.jpg'
-import Image2 from '../../imgs/mark-two/image-gallery-2.jpg'
-import Image3 from '../../imgs/mark-two/image-gallery-3.jpg'
-
-
-import Image1Tablet from '../../imgs/mark-two/tablet/image-gallery-1.jpg'
-import Image2Tablet from '../../imgs/mark-two/tablet/image-gallery-2.jpg'
-import Image3Tablet from '../../imgs/mark-two/tablet/image-gallery-3.jpg'
-
-import Image1Mobile from '../../imgs/mark-two/mobile/image-gallery-1.jpg'
-import Image2Mobile from '../../imgs/mark-two/mobile/image-gallery-2.jpg'
-import Image3Mobile from '../../imgs/mark-two/mobile/image-gallery-3.jpg'
 
 
 import './ImagePreviewGallery.scss'
@@ -45,12 +33,12 @@ export const ImagePreviewGallery = ({ gallery }) => {
             <div className="left-container flex column">
                 {/* <img src={width > 780 ? Image1 : Image1Mobile} alt="" />
                 <img src={width > 780 ? Image2 : Image2Mobile} alt="" /> */}
-                <img src={getImageBasedOnSize(gallery.first)}></img>
-                <img src={getImageBasedOnSize(gallery.second)}></img>
+                <img src={getImageBasedOnSize(gallery.first)} alt={gallery.first}></img>
+                <img src={getImageBasedOnSize(gallery.second)} alt={gallery.second}></img>
 
             </div>
             {/* <img src={width > 780 ? Image3 : Image3Mobile} alt="" /> */}
-            <img src={getImageBasedOnSize(gallery.third)}></img>
+            <img src={getImageBasedOnSize(gallery.third)} alt={gallery.third}></img>
 
         </div>
     )

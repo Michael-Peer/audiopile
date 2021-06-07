@@ -1,7 +1,6 @@
 
 
 import './FourthShowcase.scss'
-import BestGear from '../../imgs/product-showcase/image-best-gear.jpg'
 
 export const FourthShowcase = (props) => {
 

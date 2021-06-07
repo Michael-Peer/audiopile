@@ -10,7 +10,7 @@ export const AlsoLikeItemPreview = ({ imgUrl, productName, id }) => {
     return (
         <div className="also-like-item-preview flex column align-center">
             <div className="img-wrapper">
-                <img src={imgUrl} />
+                <img src={imgUrl} alt="image" />
             </div>
             <h5 className="product-name">{productName}</h5>
             <ButtonFilled txt="SEE PRODUCT" width={160} onClick={() => { history.push(`/products/${id}`) }} />

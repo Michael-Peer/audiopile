@@ -1,6 +1,5 @@
 
 
-import { NavBar } from '../NavBar/NavBar'
 import Logo from '../../imgs/logo.svg'
 import FacebookIcon from '../../imgs/social-networks/icon-facebook.svg'
 import TwitterIcon from '../../imgs/social-networks/icon-twitter.svg'

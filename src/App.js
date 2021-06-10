@@ -4,7 +4,7 @@ import { Header } from './cmps/Header/Header'
 
 import { Footer } from './cmps/Footer/Footer';
 import { AudiopileApp } from './pages/AudiopileApp/AudiopileApp';
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import { HashRouter as Router, Route, Switch } from 'react-router-dom';
 import { ProductDetailPage } from './pages/ProductDetailPage/ProductDetailPage';
 import { CheckoutPage } from './pages/CheckoutPage/CheckoutPage';
 import { CategoetPage } from './pages/CategoetPage/CategoetPage';
@@ -19,10 +19,10 @@ function App() {
           {/* <Route component={HeadphoneCategoryPage} path="/headphones" />
           <Route component={SpeakersCategoryPage} path="/speakers" />
           <Route component={EarphonesCategoryPage} path="/earphones" /> */}
-          <Route component={ProductDetailPage} path="/audipile/products/:id" />
-          <Route component={CheckoutPage} path="/audipile/checkout" />
-          <Route component={CategoetPage} path="/audipile/:category"/>
-          <Route component={AudiopileApp} exact path="/audipile" />
+          <Route component={ProductDetailPage} path="/products/:id" />
+          <Route component={CheckoutPage} path="/checkout" />
+          <Route component={CategoetPage} path="/:category"/>
+          <Route component={AudiopileApp} path="/" />
         </Switch>
         <Footer />
       </div>

@@ -16,7 +16,7 @@ export const Header = (props) => {
             <nav className="main-nav main-container flex align-center space-between">
                 {isModalOpen && <BaseModal><CartModal onCheckoutClicked={() => { setIsModalOpen(false) }} /></BaseModal>}
                 <img src={Hamburger} alt="" className="hamburger" />
-                <img className="logo" src={Logo} alt="logo" onClick={() => { history.push('/audipile') }} />
+                <img className="logo" src={Logo} alt="logo" onClick={() => { history.push('/') }} />
                 <ul className="clean-list flex">
                     <li><NavLink to="/">HOME</NavLink></li>
                     <li><NavLink to="/headphones">HEADPHONES</NavLink></li>

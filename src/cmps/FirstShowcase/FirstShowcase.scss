@@ -1,5 +1,5 @@
 @import "../../styles/mixins";
-@import '../../styles/variables';
+@import "../../styles/variables";
 
 .first-showcase {
     background-color: #d87d4a;
@@ -16,11 +16,10 @@
         padding-right: 25px;
     }
 
-    @include for-medium-layout{
+    @include for-medium-layout {
         padding-left: 35px;
         padding-right: 10px;
     }
-    
 
     @include for-pre-tablet-layout {
         flex-direction: column;
@@ -32,19 +31,19 @@
     .speaker-img {
         width: 410px;
         height: 490px;
-        background-image: url('../../imgs/product-showcase/image-speaker-zx9.png');
+        background-image: url("../../imgs/product-showcase/image-speaker-zx9.png");
         background-size: cover;
 
         @include for-wide-layout {
             margin-right: 70px;
         }
 
-        @include for-medium-layout{
-           width: 330px;
-           height: 410px;
+        @include for-medium-layout {
+            width: 330px;
+            height: 410px;
         }
 
-        @include  for-small-medium-layout {
+        @include for-small-medium-layout {
             width: 280px;
             height: 340px;
         }
@@ -54,10 +53,10 @@
             margin-right: 0;
         }
 
-        @include for-mobile-layout{
+        @include for-mobile-layout {
             width: 170px;
             height: 200px;
-            background-image: url('../../imgs/product-showcase/mobile/image-speaker-zx9.png');
+            background-image: url("../../imgs/product-showcase/mobile/image-speaker-zx9.png");
             margin-bottom: 32px;
             margin-right: unset;
             background-size: cover;

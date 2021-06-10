@@ -1,9 +1,9 @@
 
 
-import Logo from '../../imgs/logo.svg'
-import FacebookIcon from '../../imgs/social-networks/icon-facebook.svg'
-import TwitterIcon from '../../imgs/social-networks/icon-twitter.svg'
-import InstagramIcon from '../../imgs/social-networks/icon-instagram.svg'
+import Logo from '../../assets/logo.svg'
+import FacebookIcon from '../../assets/social-networks/icon-facebook.svg'
+import TwitterIcon from '../../assets/social-networks/icon-twitter.svg'
+import InstagramIcon from '../../assets/social-networks/icon-instagram.svg'
 
 import './Footer.scss'
 import { NavLink } from 'react-router-dom'

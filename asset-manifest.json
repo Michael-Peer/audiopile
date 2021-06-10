@@ -1,0 +1,38 @@
+{
+  "files": {
+    "main.css": "/audiopile/static/css/main.c0b8102b.chunk.css",
+    "main.js": "/audiopile/static/js/main.278cf502.chunk.js",
+    "main.js.map": "/audiopile/static/js/main.278cf502.chunk.js.map",
+    "runtime-main.js": "/audiopile/static/js/runtime-main.9140f394.js",
+    "runtime-main.js.map": "/audiopile/static/js/runtime-main.9140f394.js.map",
+    "static/js/2.9f0431a1.chunk.js": "/audiopile/static/js/2.9f0431a1.chunk.js",
+    "static/js/2.9f0431a1.chunk.js.map": "/audiopile/static/js/2.9f0431a1.chunk.js.map",
+    "static/js/3.7febd58d.chunk.js": "/audiopile/static/js/3.7febd58d.chunk.js",
+    "static/js/3.7febd58d.chunk.js.map": "/audiopile/static/js/3.7febd58d.chunk.js.map",
+    "index.html": "/audiopile/index.html",
+    "static/css/main.c0b8102b.chunk.css.map": "/audiopile/static/css/main.c0b8102b.chunk.css.map",
+    "static/js/2.9f0431a1.chunk.js.LICENSE.txt": "/audiopile/static/js/2.9f0431a1.chunk.js.LICENSE.txt",
+    "static/media/ButtonOutlined.scss": "/audiopile/static/media/icon-arrow-right.357b9db8.svg",
+    "static/media/icon-cart.5e1893a6.svg": "/audiopile/static/media/icon-cart.5e1893a6.svg",
+    "static/media/icon-facebook.e9773e52.svg": "/audiopile/static/media/icon-facebook.e9773e52.svg",
+    "static/media/icon-hamburger.f8a9f0cf.svg": "/audiopile/static/media/icon-hamburger.f8a9f0cf.svg",
+    "static/media/icon-instagram.8d0df555.svg": "/audiopile/static/media/icon-instagram.8d0df555.svg",
+    "static/media/icon-twitter.5dc7711f.svg": "/audiopile/static/media/icon-twitter.5dc7711f.svg",
+    "static/media/FourthShowcase.scss": "/audiopile/static/media/image-best-gear.4d4a28e9.jpg",
+    "static/media/ThirdShowcase.scss": "/audiopile/static/media/image-earphones-yx1.48e16a44.jpg",
+    "static/media/image-earphones.6e8830d4.png": "/audiopile/static/media/image-earphones.6e8830d4.png",
+    "static/media/Hero.scss": "/audiopile/static/media/image-hero.55c18e98.jpg",
+    "static/media/image-headphones.fbd401d9.png": "/audiopile/static/media/image-headphones.fbd401d9.png",
+    "static/media/SecondShowcase.scss": "/audiopile/static/media/image-speaker-zx7.82dc33d6.jpg",
+    "static/media/FirstShowcase.scss": "/audiopile/static/media/image-speaker-zx9.97769f2f.png",
+    "static/media/image-speakers.bbb1a70b.png": "/audiopile/static/media/image-speakers.bbb1a70b.png",
+    "static/media/image-xx99-mark-two-headphones.0ead05d9.jpg": "/audiopile/static/media/image-xx99-mark-two-headphones.0ead05d9.jpg",
+    "static/media/logo.e03974f8.svg": "/audiopile/static/media/logo.e03974f8.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.9140f394.js",
+    "static/js/2.9f0431a1.chunk.js",
+    "static/css/main.c0b8102b.chunk.css",
+    "static/js/main.278cf502.chunk.js"
+  ]
+}

@@ -19,10 +19,10 @@ function App() {
           {/* <Route component={HeadphoneCategoryPage} path="/headphones" />
           <Route component={SpeakersCategoryPage} path="/speakers" />
           <Route component={EarphonesCategoryPage} path="/earphones" /> */}
-          <Route component={ProductDetailPage} path="/products/:id" />
-          <Route component={CheckoutPage} path="/checkout" />
-          <Route component={CategoetPage} path="/:category"/>
-          <Route component={AudiopileApp} path="/" />
+          <Route component={ProductDetailPage} path="/audipile/products/:id" />
+          <Route component={CheckoutPage} path="/audipile/checkout" />
+          <Route component={CategoetPage} path="/audipile/:category"/>
+          <Route component={AudiopileApp} exact path="/audipile" />
         </Switch>
         <Footer />
       </div>

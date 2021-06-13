@@ -35,15 +35,17 @@ export const CategoetPage = () => {
     const getImageBasedOnSize = (product) => {
         if (width > 768) {
             console.log('getting desktop');
-            return product.image.desktop
+            return product.categoryImage.desktop
         } else if (width < 768 && width > 500) {
             console.log('getting tablet');
-            return product.image.tablet
+            return product.categoryImage.tablet
         } else {
             console.log('getting mobile');
-            return product.image.mobile
+            return product.categoryImage.mobile
         }
     }
+
+
 
 
     return (

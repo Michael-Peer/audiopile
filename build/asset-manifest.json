@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/audiopile/static/css/main.c0b8102b.chunk.css",
-    "main.js": "/audiopile/static/js/main.d8d582dd.chunk.js",
-    "main.js.map": "/audiopile/static/js/main.d8d582dd.chunk.js.map",
+    "main.js": "/audiopile/static/js/main.64f4b64a.chunk.js",
+    "main.js.map": "/audiopile/static/js/main.64f4b64a.chunk.js.map",
     "runtime-main.js": "/audiopile/static/js/runtime-main.9140f394.js",
     "runtime-main.js.map": "/audiopile/static/js/runtime-main.9140f394.js.map",
-    "static/js/2.9f0431a1.chunk.js": "/audiopile/static/js/2.9f0431a1.chunk.js",
-    "static/js/2.9f0431a1.chunk.js.map": "/audiopile/static/js/2.9f0431a1.chunk.js.map",
+    "static/js/2.9c0daa9c.chunk.js": "/audiopile/static/js/2.9c0daa9c.chunk.js",
+    "static/js/2.9c0daa9c.chunk.js.map": "/audiopile/static/js/2.9c0daa9c.chunk.js.map",
     "static/js/3.7febd58d.chunk.js": "/audiopile/static/js/3.7febd58d.chunk.js",
     "static/js/3.7febd58d.chunk.js.map": "/audiopile/static/js/3.7febd58d.chunk.js.map",
     "index.html": "/audiopile/index.html",
     "static/css/main.c0b8102b.chunk.css.map": "/audiopile/static/css/main.c0b8102b.chunk.css.map",
-    "static/js/2.9f0431a1.chunk.js.LICENSE.txt": "/audiopile/static/js/2.9f0431a1.chunk.js.LICENSE.txt",
+    "static/js/2.9c0daa9c.chunk.js.LICENSE.txt": "/audiopile/static/js/2.9c0daa9c.chunk.js.LICENSE.txt",
     "static/media/ButtonOutlined.scss": "/audiopile/static/media/icon-arrow-right.357b9db8.svg",
     "static/media/icon-cart.5e1893a6.svg": "/audiopile/static/media/icon-cart.5e1893a6.svg",
     "static/media/icon-facebook.e9773e52.svg": "/audiopile/static/media/icon-facebook.e9773e52.svg",
@@ -31,8 +31,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.9140f394.js",
-    "static/js/2.9f0431a1.chunk.js",
+    "static/js/2.9c0daa9c.chunk.js",
     "static/css/main.c0b8102b.chunk.css",
-    "static/js/main.d8d582dd.chunk.js"
+    "static/js/main.64f4b64a.chunk.js"
   ]
 }

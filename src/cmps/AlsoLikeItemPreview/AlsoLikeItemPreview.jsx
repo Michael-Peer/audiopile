@@ -3,9 +3,11 @@
 import './AlsoLikeItemPreview.scss'
 import { ButtonFilled } from '../ButtonFilled/ButtonFilled'
 import { useHistory } from 'react-router'
+import { productService } from '../../services/productService'
 
 export const AlsoLikeItemPreview = ({ imgUrl, productName, id }) => {
     const history = useHistory()
+
 
     return (
         <div className="also-like-item-preview flex column align-center">

@@ -42,7 +42,7 @@ export const ProductDetailPage = () => {
     const getImageBasedOnSize = () => {
         if (width > 768) {
             return product.image.desktop
-        } else if (width < 768 && width < 500) {
+        } else if (width < 768 && width > 600) {
             console.log(product, 'tablet');
             return product.image.tablet
         } else {

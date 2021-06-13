@@ -4,7 +4,7 @@
 export const productService = {
     query,
     getById,
-    getByCategory
+    getByCategory,
 }
 
 const products = [
@@ -18,6 +18,11 @@ const products = [
             "desktop": "https://michael-peer.github.io/audiopile/assets/product-yx1-earphones/desktop/image-product.jpg"
         },
         "category": "earphones",
+        "categoryImage": {
+            "mobile": "https://michael-peer.github.io/audiopile/assets/category-earphones/mobile/image-yx1-earphones.jpg",
+            "tablet": "https://michael-peer.github.io/audiopile/assets/category-earphones/tablet/image-yx1-earphones.jpg",
+            "desktop": "https://michael-peer.github.io/audiopile/assets/category-earphones/desktop/image-yx1-earphones.jpg"
+        },
         "new": true,
         "price": 599,
         "description": "Tailor your listening experience with bespoke dynamic drivers from the new YX1 Wireless Earphones. Enjoy incredible high-fidelity sound even in noisy environments with its active noise cancellation feature.",
@@ -63,6 +68,7 @@ const products = [
         },
         "others": [
             {
+                "id": 3,
                 "slug": "xx99-mark-one-headphones",
                 "name": "XX99 Mark I",
                 "image": {
@@ -72,6 +78,7 @@ const products = [
                 }
             },
             {
+                "id": 2,
                 "slug": "xx59-headphones",
                 "name": "XX59",
                 "image": {
@@ -81,6 +88,7 @@ const products = [
                 }
             },
             {
+                "id": 6,
                 "slug": "zx9-speaker",
                 "name": "ZX9 Speaker",
                 "image": {
@@ -101,6 +109,11 @@ const products = [
             "desktop": "https://michael-peer.github.io/audiopile/assets/product-xx59-headphones/desktop/image-product.jpg"
         },
         "category": "headphones",
+        "categoryImage": {
+            "mobile": "https://michael-peer.github.io/audiopile/assets/category-headphones/mobile/image-xx59.jpg",
+            "tablet": "https://michael-peer.github.io/audiopile/assets/category-headphones/tablet/image-xx59.jpg",
+            "desktop": "https://michael-peer.github.io/audiopile/assets/category-headphones/desktop/image-xx59.jpg"
+        },
         "new": false,
         "price": 899,
         "description": "Enjoy your audio almost anywhere and customize it to your specific tastes with the XX59 headphones. The stylish yet durable versatile wireless headset is a brilliant companion at home or on the move.",
@@ -142,6 +155,7 @@ const products = [
         },
         "others": [
             {
+                "id": 4,
                 "slug": "xx99-mark-two-headphones",
                 "name": "XX99 Mark II",
                 "image": {
@@ -151,6 +165,7 @@ const products = [
                 }
             },
             {
+                "id": 3,
                 "slug": "xx99-mark-one-headphones",
                 "name": "XX99 Mark I",
                 "image": {
@@ -160,6 +175,7 @@ const products = [
                 }
             },
             {
+                "id": 6,
                 "slug": "zx9-speaker",
                 "name": "ZX9 Speaker",
                 "image": {
@@ -180,6 +196,11 @@ const products = [
             "desktop": "https://michael-peer.github.io/audiopile/assets/product-xx99-mark-one-headphones/desktop/image-product.jpg"
         },
         "category": "headphones",
+        "categoryImage": {
+            "mobile": "https://michael-peer.github.io/audiopile/assets/category-headphones/mobile/image-xx99-mark-one.jpg",
+            "tablet": "https://michael-peer.github.io/audiopile/assets/category-headphones/tablet/image-xx99-mark-one.jpg",
+            "desktop": "https://michael-peer.github.io/audiopile/assets/category-headphones/desktop/image-xx99-mark-one.jpg"
+        },
         "new": false,
         "price": 1750,
         "description": "As the gold standard for headphones, the classic XX99 Mark I offers detailed and accurate audio reproduction for audiophiles, mixing engineers, and music aficionados alike in studios and on the go.",
@@ -221,6 +242,7 @@ const products = [
         },
         "others": [
             {
+                "id": 4,
                 "slug": "xx99-mark-two-headphones",
                 "name": "XX99 Mark II",
                 "image": {
@@ -230,6 +252,7 @@ const products = [
                 }
             },
             {
+                "id": 2,
                 "slug": "xx59-headphones",
                 "name": "XX59",
                 "image": {
@@ -239,6 +262,7 @@ const products = [
                 }
             },
             {
+                "id": 6,
                 "slug": "zx9-speaker",
                 "name": "ZX9 Speaker",
                 "image": {
@@ -259,6 +283,11 @@ const products = [
             "desktop": "https://michael-peer.github.io/audiopile/assets/product-xx99-mark-two-headphones/desktop/image-product.jpg"
         },
         "category": "headphones",
+        "categoryImage": {
+            "mobile": "https://michael-peer.github.io/audiopile/assets/category-headphones/mobile/image-xx99-mark-two.jpg",
+            "tablet": "https://michael-peer.github.io/audiopile/assets/category-headphones/tablet/image-xx99-mark-two.jpg",
+            "desktop": "https://michael-peer.github.io/audiopile/assets/category-headphones/desktop/image-xx99-mark-two.jpg"
+        },
         "new": true,
         "price": 2999,
         "description": "The new XX99 Mark II headphones is the pinnacle of pristine audio. It redefines your premium headphone experience by reproducing the balanced depth and precision of studio-quality sound.",
@@ -306,6 +335,7 @@ const products = [
             {
                 "slug": "xx99-mark-one-headphones",
                 "name": "XX99 Mark I",
+                "id": 3,
                 "image": {
                     "mobile": "https://michael-peer.github.io/audiopile/assets/shared/mobile/image-xx99-mark-one-headphones.jpg",
                     "tablet": "https://michael-peer.github.io/audiopile/assets/shared/tablet/image-xx99-mark-one-headphones.jpg",
@@ -313,6 +343,7 @@ const products = [
                 }
             },
             {
+                "id": 2,
                 "slug": "xx59-headphones",
                 "name": "XX59",
                 "image": {
@@ -322,6 +353,7 @@ const products = [
                 }
             },
             {
+                "id": 6,
                 "slug": "zx9-speaker",
                 "name": "ZX9 Speaker",
                 "image": {
@@ -342,6 +374,11 @@ const products = [
             "desktop": "https://michael-peer.github.io/audiopile/assets/product-zx7-speaker/desktop/image-product.jpg"
         },
         "category": "speakers",
+        "categoryImage": {
+            "mobile": "https://michael-peer.github.io/audiopile/assets/category-speakers/mobile/image-zx7.jpg",
+            "tablet": "https://michael-peer.github.io/audiopile/assets/category-speakers/tablet/image-zx7.jpg",
+            "desktop": "https://michael-peer.github.io/audiopile/assets/category-speakers/desktop/image-zx7.jpg"
+        },
         "new": false,
         "price": 3500,
         "description": "Stream high quality sound wirelessly with minimal to no loss. The ZX7 speaker uses high-end audiophile components that represents the top of the line powered speakers for home or studio use.",
@@ -387,6 +424,7 @@ const products = [
         },
         "others": [
             {
+                "id": 6,
                 "slug": "zx9-speaker",
                 "name": "ZX9 Speaker",
                 "image": {
@@ -396,6 +434,7 @@ const products = [
                 }
             },
             {
+                "id": 3,
                 "slug": "xx99-mark-one-headphones",
                 "name": "XX99 Mark I",
                 "image": {
@@ -405,6 +444,7 @@ const products = [
                 }
             },
             {
+                "id": 2,
                 "slug": "xx59-headphones",
                 "name": "XX59",
                 "image": {
@@ -425,6 +465,11 @@ const products = [
             "desktop": "https://michael-peer.github.io/audiopile/assets/product-zx9-speaker/desktop/image-product.jpg"
         },
         "category": "speakers",
+        "categoryImage": {
+            "mobile": "https://michael-peer.github.io/audiopile/assets/category-speakers/mobile/image-zx9.jpg",
+            "tablet": "https://michael-peer.github.io/audiopile/assets/category-speakers/tablet/image-zx9.jpg",
+            "desktop": "https://michael-peer.github.io/audiopile/assets/category-speakers/desktop/image-zx9.jpg"
+        },
         "new": true,
         "price": 4500,
         "description": "Upgrade your sound system with the all new ZX9 active speaker. It’s a bookshelf speaker system that offers truly wireless connectivity -- creating new possibilities for more pleasing and practical audio setups.",
@@ -470,6 +515,7 @@ const products = [
         },
         "others": [
             {
+                "id": 5,
                 "slug": "zx7-speaker",
                 "name": "ZX7 Speaker",
                 "image": {
@@ -479,6 +525,7 @@ const products = [
                 }
             },
             {
+                "id": 3,
                 "slug": "xx99-mark-one-headphones",
                 "name": "XX99 Mark I",
                 "image": {
@@ -488,6 +535,7 @@ const products = [
                 }
             },
             {
+                "id": 2,
                 "slug": "xx59-headphones",
                 "name": "XX59",
                 "image": {

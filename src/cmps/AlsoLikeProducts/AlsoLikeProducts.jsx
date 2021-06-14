@@ -3,25 +3,16 @@
 import { AlsoLikeItemPreview } from '../AlsoLikeItemPreview/AlsoLikeItemPreview'
 import './AlsoLikeProducts.scss'
 
-import { useEffect, useState } from 'react';
+import { useWidth } from '../../hook/useWidth'
 
 
 
 
 
 export const AlsoLikeProducts = ({ othersList }) => {
-    const [width, setWidth] = useState(window.innerWidth)
+   
+    const width = useWidth()
 
-    console.log('others', othersList);
-
-    //calculate screen width
-    useEffect(() => {
-        function handleResize() {
-            setWidth(window.innerWidth)
-        }
-        window.addEventListener('resize', handleResize)
-        return () => window.removeEventListener('resize', handleResize)
-    }, [])
 
     const getImageBasedOnSize = (product) => {
         if (width > 768) {

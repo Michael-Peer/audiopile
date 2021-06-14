@@ -6,32 +6,23 @@ import { ButtonFilled } from '../ButtonFilled'
 import { Link } from 'react-router-dom'
 import { CartCounter } from '../CartCounter/CartCounter'
 import { useDispatch, useSelector } from 'react-redux'
-import { useEffect, useState } from 'react'
 import { increaseQuantity, decreaseQuantity, removeAllFromCart } from '../../store/actions/cartActions'
+import { useWidth } from '../../hook/useWidth'
 
 
 
 
 export const CartModal = ({ onCheckoutClicked }) => {
 
-    const [width, setWidth] = useState(window.innerWidth)
 
+    const width = useWidth()
 
     const cart = useSelector(state => state.cartReducer.cart)
     const total = useSelector(state => state.cartReducer.total)
 
     const dispatch = useDispatch()
 
-    //calculate screen width
-    useEffect(() => {
-        function handleResize() {
-            setWidth(window.innerWidth)
-        }
-        window.addEventListener('resize', handleResize)
-        return () => window.removeEventListener('resize', handleResize)
-    }, [])
-
-
+ 
 
 
     const getImageBasedOnSize = (product) => {

@@ -10,26 +10,19 @@ import { CategoryList } from '../../cmps/CategoryList/CategoryList'
 import { FourthShowcase } from '../../cmps/FourthShowcase/FourthShowcase'
 
 import { CategoryPageItemRight } from '../../cmps/CategoryPageItemRight/CategoryPageItemRight'
-import { useEffect, useState } from 'react'
 
 import { productService } from '../../services/productService'
 import { useParams } from 'react-router'
+import { useWidth } from '../../hook/useWidth'
 
 export const CategoetPage = () => {
-    const [width, setWidth] = useState(window.innerWidth)
+    const width = useWidth()
+
     const { category } = useParams()
     const products = productService.getByCategory(category)
 
     console.log('products', products);
 
-    //calculate screen width
-    useEffect(() => {
-        function handleResize() {
-            setWidth(window.innerWidth)
-        }
-        window.addEventListener('resize', handleResize)
-        return () => window.removeEventListener('resize', handleResize)
-    }, [])
 
 
     const getImageBasedOnSize = (product) => {

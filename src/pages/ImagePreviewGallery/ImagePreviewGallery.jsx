@@ -1,21 +1,12 @@
 
-import { useEffect, useState } from 'react'
+import { useWidth } from '../../hook/useWidth'
 
 
 import './ImagePreviewGallery.scss'
 
 export const ImagePreviewGallery = ({ gallery }) => {
-    const [width, setWidth] = useState(window.innerWidth)
 
-    //calculate screen width
-    useEffect(() => {
-        function handleResize() {
-            setWidth(window.innerWidth)
-        }
-        window.addEventListener('resize', handleResize)
-        return () => window.removeEventListener('resize', handleResize)
-    }, [])
-
+    const width = useWidth()
 
     const getImageBasedOnSize = (image) => {
         if (width > 768) {

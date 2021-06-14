@@ -4,26 +4,18 @@ import { CartModalItemPreview } from '../CartModalItemPreview/CartModalItemPrevi
 import { ButtonFilled } from '../ButtonFilled'
 import './PurchaseModal.scss'
 
-import MarkTwo from '../../imgs/also-like/image-xx99-mark-two-headphones.jpg'
 import { useHistory } from 'react-router'
 import { useSelector } from 'react-redux'
-import { useEffect, useState } from 'react'
+import { useWidth } from '../../hook/useWidth'
 
 
 export const PurchaseModal = (props) => {
     const history = useHistory()
-    const [width, setWidth] = useState(window.innerWidth)
-    const cart = useSelector(state => state.cartReducer.cart)
+    const width = useWidth()
+        const cart = useSelector(state => state.cartReducer.cart)
     const total = useSelector(state => state.cartReducer.total)
 
-    //calculate screen width
-    useEffect(() => {
-        function handleResize() {
-            setWidth(window.innerWidth)
-        }
-        window.addEventListener('resize', handleResize)
-        return () => window.removeEventListener('resize', handleResize)
-    }, [])
+
 
     const getImageBasedOnSize = (product) => {
         if (width > 768) {

@@ -2,7 +2,7 @@
 
 import './ProductDetailPage.scss'
 
-import { useEffect, useState } from 'react';
+import { useWidth } from '../../hook/useWidth'
 import { useHistory, useParams } from 'react-router';
 import { productService } from '../../services/productService';
 
@@ -15,10 +15,11 @@ import { CategoryList } from '../../cmps/CategoryList/CategoryList'
 import { FourthShowcase } from '../../cmps/FourthShowcase/FourthShowcase'
 import { useDispatch } from 'react-redux';
 import { addToCart } from '../../store/actions/cartActions';
+import { useEffect, useState } from 'react';
 
 
 export const ProductDetailPage = () => {
-    const [width, setWidth] = useState(window.innerWidth)
+    const width = useWidth()
     const [product, setProduct] = useState(null)
     const [count, setCount] = useState(1)
     const { id } = useParams()
@@ -30,14 +31,6 @@ export const ProductDetailPage = () => {
         setProduct(product)
     }, [id, product])
 
-    //calculate screen width
-    useEffect(() => {
-        function handleResize() {
-            setWidth(window.innerWidth)
-        }
-        window.addEventListener('resize', handleResize)
-        return () => window.removeEventListener('resize', handleResize)
-    }, [])
 
     const getImageBasedOnSize = () => {
         if (width > 768) {
@@ -59,7 +52,7 @@ export const ProductDetailPage = () => {
 
     const onAddToCartClicked = () => {
         product.quantity = count
-        if(!product.quantity) return
+        if (!product.quantity) return
         dispatch(addToCart(product))
     }
 
@@ -67,7 +60,7 @@ export const ProductDetailPage = () => {
         <>
             {product &&
                 <article className="product-detail main-container">
-                    <p className="go-back" onClick={() => {history.goBack()}}>Go Back</p>
+                    <p className="go-back" onClick={() => { history.goBack() }}>Go Back</p>
                     <section className="product-preview-container flex">
                         <img src={getImageBasedOnSize()} alt="headphone" />
                         <div className="txt-wrapper flex column justify-center">

@@ -7,24 +7,15 @@ import { FourthShowcase } from '../../cmps/FourthShowcase/FourthShowcase'
 
 import './HeadphoneCategoryPage.scss'
 import { CategoryPageItemRight } from '../../cmps/CategoryPageItemRight/CategoryPageItemRight'
-import { useEffect, useState } from 'react'
+import { useWidth } from '../../hook/useWidth'
 
 import { productService } from '../../services/productService'
 
 export const HeadphoneCategoryPage = () => {
-    const [width, setWidth] = useState(window.innerWidth)
+    const width = useWidth()
     const products = productService.getByCategory('headphones')
 
     console.log('products', products);
-
-    //calculate screen width
-    useEffect(() => {
-        function handleResize() {
-            setWidth(window.innerWidth)
-        }
-        window.addEventListener('resize', handleResize)
-        return () => window.removeEventListener('resize', handleResize)
-    }, [])
 
 
     const getImageBasedOnSize = (product) => {

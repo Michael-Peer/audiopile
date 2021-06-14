@@ -14,22 +14,16 @@ import { useDispatch, useSelector } from 'react-redux'
 import { useHistory } from 'react-router'
 import { Field, Formik } from 'formik'
 import { updateTotal } from '../../store/actions/cartActions'
+import { useWidth } from '../../hook/useWidth'
+
 
 
 export const CheckoutPage = () => {
     const [isModalOpen, setIsModalOpen] = useState(false)
-    const [width, setWidth] = useState(window.innerWidth)
+    const width = useWidth()
     const history = useHistory()
     const dispatch = useDispatch()
 
-
-    useEffect(() => {
-        function handleResize() {
-            setWidth(window.innerWidth)
-        }
-        window.addEventListener('resize', handleResize)
-        return () => window.removeEventListener('resize', handleResize)
-    }, [])
 
     const cart = useSelector(state => state.cartReducer.cart)
     const total = useSelector(state => state.cartReducer.total)

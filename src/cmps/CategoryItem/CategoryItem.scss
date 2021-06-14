@@ -42,6 +42,10 @@
             max-width: 220px;
         }
 
+        @include for-small-layout {
+            max-width: 190px;
+        }
+
         @include for-mobile-layout {
             max-width: unset;
         }

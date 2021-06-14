@@ -5,6 +5,10 @@
     color: white;
     padding-top: 24px;
 
+    @media (max-width: 710px) {
+        padding:20px;
+    }
+
     .main-nav {
         margin-bottom: 36px;
         li {

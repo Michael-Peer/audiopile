@@ -26,6 +26,7 @@
         justify-content: center;
         align-items: center;
         padding-right: 10px;
+        padding-top: 50px;
     }
 
     .speaker-img {
@@ -51,6 +52,8 @@
         @include for-pre-tablet-layout {
             margin-bottom: 64px;
             margin-right: 0;
+            width: 200px;
+            height: 240px;
         }
 
         @include for-mobile-layout {

@@ -61,8 +61,8 @@ export const CheckoutPage = () => {
                             <p className="checkout-form-title">Billing Details</p>
                             <div className="billing-details-container flex flex-wrap">
                                 <Field name="name" label="Name" type="input" as={CustomInput} placeholder="Alexei Ward" />
-                                <Field name="email" label="Email Address" type="input" as={CustomInput} placeholder="alexei@mail.com" />
-                                <Field name="phone" label="Phone Number" type="input" as={CustomInput} placeholder="+1 202-555-0136" />
+                                <Field name="email" label="Email Address" type="email" as={CustomInput} placeholder="alexei@mail.com" />
+                                <Field name="phone" label="Phone Number" type="number" as={CustomInput} placeholder="+1 202-555-0136" />
                                 {/* <CustomInput placeholder="Alexei Ward" label="Name" onChange={handleChange} onBlur={handleBlur} value={values.name} name="name" /> */}
 
                                 {/* 
@@ -76,7 +76,7 @@ export const CheckoutPage = () => {
                             <p className="checkout-form-title">Shipping Info</p>
                             <div className="shipping-info-container flex flex-wrap">
                                 <Field name="address" label="Address" type="input" as={CustomInput} placeholder="1137 Williams Avenue" />
-                                <Field name="zip" label="ZIP Code" type="input" as={CustomInput} placeholder="10001" />
+                                <Field name="zip" label="ZIP Code" type="number" as={CustomInput} placeholder="10001" />
                                 <Field name="city" label="City" type="input" as={CustomInput} placeholder="New York" />
                                 <Field name="country" placeholder="United States" label="Country" type="input" as={CustomInput} />
                                 {/* <CustomInput placeholder="1137 Williams Avenue" label="Address" />
@@ -93,12 +93,14 @@ export const CheckoutPage = () => {
                                     <CustomRadioButton label="Cash on Delivery" name="payment" />
                                 </div>
                                 <div className="payment-details-inputs-container flex">
-                                    <Field name="eMoneyNumber" placeholder="238521993" label="e-Money Number" type="input" as={CustomInput} />
-                                    <Field name="eMoneyPin" placeholder="6891" label="e-Money PIN" type="input" as={CustomInput} />
+                                    <Field name="eMoneyNumber" placeholder="238521993" label="e-Money Number" type="number" as={CustomInput} />
+                                    <Field name="eMoneyPin" placeholder="6891" label="e-Money PIN" type="number" as={CustomInput} />
                                     {/* <CustomInput placeholder="238521993" label="e-Money Number" />
                                     <CustomInput placeholder="6891" label="e-Money PIN" /> */}
                                 </div>
                             </div>
+
+                            <button>sadsdadsaads</button>
                         </form>
                     )}
 
@@ -111,7 +113,7 @@ export const CheckoutPage = () => {
                     <div className="items">
                         {cart.map(cartItem => {
                             return (
-                                <div className="checkout-item flex align-center space-between">
+                                <div className="checkout-item flex align-center space-between" key={cartItem.id}>
                                     <CartModalItemPreview prodctName={cartItem.name} productPrice={`$ ${cartItem.price.toLocaleString()}`} imgUrl={getImageBasedOnSize(cartItem)} />
                                     <ItemsCount count={cartItem.quantity} />
                                 </div>
@@ -150,6 +152,7 @@ export const CheckoutPage = () => {
                     </div>
 
                     <ButtonFilled txt="CONTINUE AND PAY" onClick={() => {
+                        if (!cart.length) return
                         const totalPrice = total + 50 + 1079
                         dispatch(updateTotal(totalPrice))
                         setIsModalOpen(!isModalOpen)

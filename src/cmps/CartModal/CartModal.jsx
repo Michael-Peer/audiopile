@@ -22,7 +22,7 @@ export const CartModal = ({ onCheckoutClicked }) => {
 
     const dispatch = useDispatch()
 
- 
+
 
 
     const getImageBasedOnSize = (product) => {
@@ -69,7 +69,7 @@ export const CartModal = ({ onCheckoutClicked }) => {
                 <p className="total-container-txt">TOTAL</p>
                 <h6>{`$ ${total.toLocaleString()}`}</h6>
             </div>
-            <Link to="/checkout"><ButtonFilled txt="CHECKOUT" onClick={onCheckoutClicked} /></Link>
+            <Link to={!cart.length ? '/' : '/checkout'}><ButtonFilled txt="CHECKOUT" onClick={onCheckoutClicked} /></Link>
         </div>
     )
 }

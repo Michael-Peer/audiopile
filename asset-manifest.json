@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/audiopile/static/css/main.c0b8102b.chunk.css",
-    "main.js": "/audiopile/static/js/main.71fa46bb.chunk.js",
-    "main.js.map": "/audiopile/static/js/main.71fa46bb.chunk.js.map",
+    "main.css": "/audiopile/static/css/main.9144533e.chunk.css",
+    "main.js": "/audiopile/static/js/main.ab955180.chunk.js",
+    "main.js.map": "/audiopile/static/js/main.ab955180.chunk.js.map",
     "runtime-main.js": "/audiopile/static/js/runtime-main.9140f394.js",
     "runtime-main.js.map": "/audiopile/static/js/runtime-main.9140f394.js.map",
-    "static/js/2.9c0daa9c.chunk.js": "/audiopile/static/js/2.9c0daa9c.chunk.js",
-    "static/js/2.9c0daa9c.chunk.js.map": "/audiopile/static/js/2.9c0daa9c.chunk.js.map",
+    "static/js/2.03ef2ba0.chunk.js": "/audiopile/static/js/2.03ef2ba0.chunk.js",
+    "static/js/2.03ef2ba0.chunk.js.map": "/audiopile/static/js/2.03ef2ba0.chunk.js.map",
     "static/js/3.7febd58d.chunk.js": "/audiopile/static/js/3.7febd58d.chunk.js",
     "static/js/3.7febd58d.chunk.js.map": "/audiopile/static/js/3.7febd58d.chunk.js.map",
     "index.html": "/audiopile/index.html",
-    "static/css/main.c0b8102b.chunk.css.map": "/audiopile/static/css/main.c0b8102b.chunk.css.map",
-    "static/js/2.9c0daa9c.chunk.js.LICENSE.txt": "/audiopile/static/js/2.9c0daa9c.chunk.js.LICENSE.txt",
+    "static/css/main.9144533e.chunk.css.map": "/audiopile/static/css/main.9144533e.chunk.css.map",
+    "static/js/2.03ef2ba0.chunk.js.LICENSE.txt": "/audiopile/static/js/2.03ef2ba0.chunk.js.LICENSE.txt",
     "static/media/ButtonOutlined.scss": "/audiopile/static/media/icon-arrow-right.357b9db8.svg",
     "static/media/icon-cart.5e1893a6.svg": "/audiopile/static/media/icon-cart.5e1893a6.svg",
     "static/media/icon-facebook.e9773e52.svg": "/audiopile/static/media/icon-facebook.e9773e52.svg",
@@ -26,13 +26,12 @@
     "static/media/SecondShowcase.scss": "/audiopile/static/media/image-speaker-zx7.82dc33d6.jpg",
     "static/media/FirstShowcase.scss": "/audiopile/static/media/image-speaker-zx9.97769f2f.png",
     "static/media/image-speakers.bbb1a70b.png": "/audiopile/static/media/image-speakers.bbb1a70b.png",
-    "static/media/image-xx99-mark-two-headphones.0ead05d9.jpg": "/audiopile/static/media/image-xx99-mark-two-headphones.0ead05d9.jpg",
     "static/media/logo.e03974f8.svg": "/audiopile/static/media/logo.e03974f8.svg"
   },
   "entrypoints": [
     "static/js/runtime-main.9140f394.js",
-    "static/js/2.9c0daa9c.chunk.js",
-    "static/css/main.c0b8102b.chunk.css",
-    "static/js/main.71fa46bb.chunk.js"
+    "static/js/2.03ef2ba0.chunk.js",
+    "static/css/main.9144533e.chunk.css",
+    "static/js/main.ab955180.chunk.js"
   ]
 }

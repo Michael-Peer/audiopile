@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/audiopile/static/css/main.30b959ea.chunk.css",
-    "main.js": "/audiopile/static/js/main.dc8a3495.chunk.js",
-    "main.js.map": "/audiopile/static/js/main.dc8a3495.chunk.js.map",
-    "runtime-main.js": "/audiopile/static/js/runtime-main.ccc3862a.js",
-    "runtime-main.js.map": "/audiopile/static/js/runtime-main.ccc3862a.js.map",
-    "static/js/2.cd4053f2.chunk.js": "/audiopile/static/js/2.cd4053f2.chunk.js",
-    "static/js/2.cd4053f2.chunk.js.map": "/audiopile/static/js/2.cd4053f2.chunk.js.map",
-    "static/js/3.260c758c.chunk.js": "/audiopile/static/js/3.260c758c.chunk.js",
-    "static/js/3.260c758c.chunk.js.map": "/audiopile/static/js/3.260c758c.chunk.js.map",
+    "main.js": "/audiopile/static/js/main.ccae39f1.chunk.js",
+    "main.js.map": "/audiopile/static/js/main.ccae39f1.chunk.js.map",
+    "runtime-main.js": "/audiopile/static/js/runtime-main.76551d42.js",
+    "runtime-main.js.map": "/audiopile/static/js/runtime-main.76551d42.js.map",
+    "static/js/2.b5792b7b.chunk.js": "/audiopile/static/js/2.b5792b7b.chunk.js",
+    "static/js/2.b5792b7b.chunk.js.map": "/audiopile/static/js/2.b5792b7b.chunk.js.map",
+    "static/js/3.02eb8d9c.chunk.js": "/audiopile/static/js/3.02eb8d9c.chunk.js",
+    "static/js/3.02eb8d9c.chunk.js.map": "/audiopile/static/js/3.02eb8d9c.chunk.js.map",
     "index.html": "/audiopile/index.html",
     "static/css/main.30b959ea.chunk.css.map": "/audiopile/static/css/main.30b959ea.chunk.css.map",
-    "static/js/2.cd4053f2.chunk.js.LICENSE.txt": "/audiopile/static/js/2.cd4053f2.chunk.js.LICENSE.txt",
+    "static/js/2.b5792b7b.chunk.js.LICENSE.txt": "/audiopile/static/js/2.b5792b7b.chunk.js.LICENSE.txt",
     "static/media/ButtonOutlined.scss": "/audiopile/static/media/icon-arrow-right.357b9db8.svg",
     "static/media/icon-cart.5e1893a6.svg": "/audiopile/static/media/icon-cart.5e1893a6.svg",
     "static/media/icon-facebook.e9773e52.svg": "/audiopile/static/media/icon-facebook.e9773e52.svg",
@@ -29,9 +29,9 @@
     "static/media/logo.e03974f8.svg": "/audiopile/static/media/logo.e03974f8.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.ccc3862a.js",
-    "static/js/2.cd4053f2.chunk.js",
+    "static/js/runtime-main.76551d42.js",
+    "static/js/2.b5792b7b.chunk.js",
     "static/css/main.30b959ea.chunk.css",
-    "static/js/main.dc8a3495.chunk.js"
+    "static/js/main.ccae39f1.chunk.js"
   ]
 }
